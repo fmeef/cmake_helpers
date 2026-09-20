@@ -22,7 +22,7 @@ function(report_bad_special_target)
 endfunction()
 
 if (APPLE AND NOT DESKTOP_APP_USE_PACKAGED)
-    set(CMAKE_OSX_DEPLOYMENT_TARGET 10.13 CACHE STRING "Minimum macOS deployment version")
+    set(CMAKE_OSX_DEPLOYMENT_TARGET 12.0 CACHE STRING "Minimum macOS deployment version")
     set(CMAKE_OSX_ARCHITECTURES "x86_64;arm64" CACHE STRING "Target macOS architectures")
 endif()
 
