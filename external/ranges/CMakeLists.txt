@@ -4,8 +4,10 @@
 # For license and copyright information please follow this link:
 # https://github.com/desktop-app/legal/blob/master/LEGAL
 
+add_definitions(-DMETA_NO_STD_FORWARD_DECLARATIONS)
 add_library(external_ranges INTERFACE IMPORTED GLOBAL)
 add_library(desktop-app::external_ranges ALIAS external_ranges)
+
 
 if (DESKTOP_APP_USE_PACKAGED)
     find_package(range-v3 QUIET)
